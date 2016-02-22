@@ -40,20 +40,53 @@ public class ZBug extends Bug
     }
 
     /**
+     * Turns the bug three times at once
+     */
+    public void tripleTurn()
+    {
+        turn();
+        turn();
+        turn();
+    }
+
+    /**
+     * turns the bug five times
+     */
+    public void quintTurn()
+    {
+        turn();
+        turn();
+        turn();
+        turn();
+        turn();
+    }
+
+    /**
      * Moves to the next location of the square.
      */
     public void act()
     {
-        if (steps < sideLength && canMove())
+        turn();
+        turn();
+        if (steps < 7)
         {
             move();
             steps++;
         }
-        else
+        if (steps == 7)
         {
-            turn();
-            steps = 0;
-            turnOne =;
+            tripleTurn();
         }
+        if (steps > 7 && < 14)
+        {
+            move();
+        }
+        if (steps == 14)
+        {
+            quintTurn();
+        }
+        //if (steps)
+
+
     }
 }
