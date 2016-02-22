@@ -14,6 +14,7 @@
       <sourceFolder url="file://$MODULE_DIR$/projects/circleBug" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/zbug" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/spiralBug" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/dancingBug" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

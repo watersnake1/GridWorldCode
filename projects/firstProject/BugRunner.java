@@ -23,7 +23,7 @@ import info.gridworld.actor.Rock;
  * locations. Click on empty locations to add additional actors. Click on
  * populated locations to invoke methods on their occupants. <br />
  * To build your own worlds, define your own actors and a runner class. See the
- * BoxBugRunner (in the boxBug folder) for an example. <br />
+ * DancingBugRunner (in the boxBug folder) for an example. <br />
  * This class is not tested on the AP CS A and AB exams.
  */
 public class BugRunner
