@@ -35,7 +35,7 @@ public class ZBug extends Bug
     public ZBug(int length)
     {
         steps = 0;
-        turnOne = false;
+        turnOne = true;
         sideLength = length;
     }
 
@@ -66,27 +66,27 @@ public class ZBug extends Bug
      */
     public void act()
     {
-        turn();
-        turn();
-        if (steps < 7)
+        if (turnOne)
         {
-            move();
-            steps++;
-        }
-        if (steps == 7)
-        {
+            turn();
+            turn();
+            for (int i = 0; i < 6; i++)
+            {
+                move();
+            }
             tripleTurn();
-        }
-        if (steps > 7 && < 14)
-        {
-            move();
-        }
-        if (steps == 14)
-        {
+            for (int i = 0; i < 6; i++)
+            {
+                move();
+            }
             quintTurn();
+            for (int i = 0; i < 6; i++)
+            {
+                move();
+            }
+            turnOne=false;
         }
-        //if (steps)
-
+        return;
 
     }
 }

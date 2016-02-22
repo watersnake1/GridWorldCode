@@ -12,11 +12,8 @@
       <sourceFolder url="file://$MODULE_DIR$/framework/info/gridworld/gui" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/framework/info/gridworld/world" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/circleBug" isTestSource="false" />
-<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/projects/zbug" isTestSource="false" />
-=======
       <sourceFolder url="file://$MODULE_DIR$/projects/spiralBug" isTestSource="false" />
->>>>>>> origin/master
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
