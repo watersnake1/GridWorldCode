@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9faf79d-6550-4953-8a3e-ad201c279390" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/muskrat/Muskrat/Muskrat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/muskrat/Muskrat/MuskratTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/dancingBug/DancingBug.java" afterPath="$PROJECT_DIR$/projects/dancingBug/DancingBug.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridWorldCode.iml" afterPath="$PROJECT_DIR$/GridWorldCode.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GridWorld.iws" />
@@ -593,7 +589,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456165731271</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="zbug is finished">
+      <created>1456325729314</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1456325729314</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
