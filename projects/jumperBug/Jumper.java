@@ -1,57 +1,75 @@
-/* 
- * AP(r) Computer Science GridWorld Case Study:
- * Copyright(c) 2005-2006 Cay S. Horstmann (http://horstmann.com)
- *
- * This code is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation.
- *
- * This code is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * @author Cay Horstmann
- * @author Chris Nevison
- * @author Barbara Cloud Wells
- */
-
-import info.gridworld.actor.Bug;
-
 /**
- * A <code>DancingBug</code> traces out a square "box" of a given size. <br />
- * The implementation of this class is testable on the AP CS A and AB exams.
+ * Created by Carol on 2/28/16.
  */
-public class BoxBug extends Bug
-{
-    private int steps;
-    private int sideLength;
+import info.gridworld.actor.Actor;
+import info.gridworld.actor.Bug;
+import info.gridworld.actor.Flower;
+import info.gridworld.actor.Rock;
+import info.gridworld.grid.Grid;
+import info.gridworld.grid.Location;
 
-    /**
-     * Constructs a box bug that traces a square of a given side length
-     * @param length the side length
-     */
-    public BoxBug(int length)
+public class Jumper extends Bug
+{
+    Location nextJump;
+    Grid grid;
+
+    public Jumper()
     {
-        steps = 0;
-        sideLength = length;
+
     }
 
     /**
-     * Moves to the next location of the square.
+     * The jumper will take two steps with every call to <code>act()</code> that is made.
+     * Jumpers are very hungry, and will eat other bugs and jumpers that are on the grid.
+     * Jumpers will not step on rocks or flowers but instead will jump over them or turn
+     * to go around them.
+     * When at the edge of a grid the jumper will turn 90 degrees until it can make a valid jump, and will
+     * do the same if the space two paces in front of it is invalid.
+     *
      */
     public void act()
     {
-        if (steps < sideLength && canMove())
+        nextJump = getLocation().getAdjacentLocation(getDirection()).getAdjacentLocation(getDirection());
+        if(canMove())
         {
-            move();
-            steps++;
+            moveTo(nextJump);
         }
         else
         {
             turn();
             turn();
-            steps = 0;
         }
+    }
+
+    /**
+     * The <code>canMove()</code> method from the <code>Bug</code> class, changed so that it checks two spaces ahead
+     * instead of one, and checks for rocks as well as flowers.
+     * @return true if the bug can move and false if the bug cannot
+     */
+    @Override
+    public boolean canMove()
+    {
+        Grid<Actor> gr = getGrid();
+        //if the grid does not exist
+        if (gr == null)
+            return false;
+        Location loc = getLocation();
+        //get the location that is two spaces in front of it instead of one
+        Location next = loc.getAdjacentLocation(getDirection()).getAdjacentLocation(getDirection());
+        //if the location does not exist
+        if (!gr.isValid(next))
+            return false;
+        Actor neighbor = gr.get(next);
+        if (neighbor == null)
+        {
+            return true;
+        }
+        else if (neighbor instanceof Rock || neighbor instanceof Flower)
+        {
+            return false;
+        }
+        return true;
+        // ok to move into empty location or onto flower
+        // not ok to move onto any other actor
     }
 }
