@@ -5,15 +5,20 @@
 import info.gridworld.actor.ActorWorld;
 import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;
+
+import java.awt.*;
+
 public class JumperRunner
 {
     public static void main(String[] args)
     {
         Jumper jumper = new Jumper();
         BoxBug boxy = new BoxBug(0);
+        boxy.setColor(Color.BLACK);
         ActorWorld world = new ActorWorld();
         world.add(new Location(4,4), jumper);
         world.add(new Location(2,4), new Rock());
+        world.add(new Location(4,5), new Rock());
         world.add(new Location(4,6), boxy);
         world.show();
     }

@@ -1,4 +1,4 @@
-/* 
+/*
  * AP(r) Computer Science GridWorld Case Study:
  * Copyright(c) 2005-2006 Cay S. Horstmann (http://horstmann.com)
  *
@@ -10,7 +10,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * @author Chris Nevison
  * @author Barbara Cloud Wells
  * @author Cay Horstmann
@@ -19,7 +19,9 @@
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Critter;
 import info.gridworld.grid.Location;
+import sun.jvm.hotspot.memory.LoaderConstraintEntry;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -27,7 +29,7 @@ import java.util.ArrayList;
  * it moves through the grid. <br />
  * The implementation of this class is testable on the AP CS A and AB exams.
  */
-public class ChameleonCritter extends Critter
+public class ChameleonKid extends Critter
 {
     /**
      * Randomly selects a neighbor and changes this critter's color to be the
@@ -54,5 +56,18 @@ public class ChameleonCritter extends Critter
     {
         setDirection(getLocation().getDirectionToward(loc));
         super.makeMove(loc);
+    }
+
+    /**
+     * Gets the actor that is immediately to its north and south
+     */
+    public ArrayList<Actor> getActors()
+    {
+        //find the space in front of the four cardinal directions and then get the actors in them
+        ArrayList<Actor> actors = new ArrayList<Actor>();
+        int dir = getDirection();
+        int[] orientations = {Location.NORTH, Location.EAST, Location.WEST, Location.SOUTH};
+        Actor ahead = getGrid().get(getLocation());
+
     }
 }

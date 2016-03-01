@@ -1,5 +1,40 @@
 /**
- * Created by Carol on 2/28/16.
+ * Created by Jay Zhu, Jon Busa and Christian Murray
+ * Ver. Feb. 29 2016
+ *
+ * Jumper Questions
+ * a.   If there is a rock or flower two spaces ahead of the jumper
+ *      then it will not move, but turn by 90 degrees to the right.
+ *
+ * b.   If the two spaces ahead does not exist, the jumper will not
+ *      move, but turn by 90 degrees to the right.
+ *
+ * c.   The jumper should turn by 90 degrees to the right.
+ *
+ * d.   The jumper should eat the actor that is sitting on the place
+ *      two in front of it if it is another bug.
+ *
+ * e.   The jumper would eat the jumper that is in its path.
+ *
+ * f.   We should still test some of the methods from the bug class
+ *      to make sure that the Jumper can do everything that a bug can do.
+ *
+ * Design
+ * a.   The Jumper should extend the Bug class.
+ *
+ * b.   The BoxBug class is simular, but a BoxBug only moves one grid at
+ *      a time.
+ *
+ * c.   Yes there should be a constructor for Jumper class, but it doesn't
+ *      take in any parameters.
+ *
+ * d.   The canMove() method overrides the origin canMove() in the Bug class.
+ *
+ * e.   The act() method was added only for Jumper class to move the bug two
+ *      grids at a time.
+ *
+ * f.   We should write a Jumper tester, and test all the methods from the
+ *      Jumper class to see if all of them functions correctly.
  */
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Bug;
