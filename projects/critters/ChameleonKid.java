@@ -16,10 +16,11 @@
  * @author Cay Horstmann
  */
 
+
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Critter;
 import info.gridworld.grid.Location;
-import sun.jvm.hotspot.memory.LoaderConstraintEntry;
+//import sun.jvm.hotspot.memory.LoaderConstraintEntry;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -29,8 +30,35 @@ import java.util.ArrayList;
  * it moves through the grid. <br />
  * The implementation of this class is testable on the AP CS A and AB exams.
  */
-public class ChameleonKid extends Critter
+public class ChameleonKid extends ChameleonCritter
 {
+    public void act()
+    {
+        super.act();
+    }
+    /**
+     * Gets the actor that is immediately to its north and south
+     */
+    public ArrayList<Actor> getActors()
+    {
+        ArrayList<Actor> actors = new ArrayList<Actor>();
+        Location currentLoc = getLocation();
+        int currentDirection = getDirection();
+        Location aheadLoc = currentLoc.getAdjacentLocation(currentDirection);
+        Location behindLoc = currentLoc.getAdjacentLocation(currentDirection - Location.HALF_CIRCLE);
+        if (getGrid().isValid(aheadLoc))
+        {
+            Actor ahead = getGrid().get(aheadLoc);
+            actors.add(ahead);
+        }
+        if (getGrid().isValid(behindLoc))
+        {
+            Actor behind = getGrid().get(behindLoc);
+            actors.add(behind);
+        }
+        return actors;
+    }
+
     /**
      * Randomly selects a neighbor and changes this critter's color to be the
      * same as that neighbor's. If there are no neighbors, no action is taken.
@@ -38,36 +66,17 @@ public class ChameleonKid extends Critter
     public void processActors(ArrayList<Actor> actors)
     {
         int n = actors.size();
-        if (n == 0)
-        {
-            setColor(getColor().darker());
-            return;
-        }
+
         int r = (int) (Math.random() * n);
 
         Actor other = actors.get(r);
-        setColor(other.getColor());
-    }
-
-    /**
-     * Turns towards the new location as it moves.
-     */
-    public void makeMove(Location loc)
-    {
-        setDirection(getLocation().getDirectionToward(loc));
-        super.makeMove(loc);
-    }
-
-    /**
-     * Gets the actor that is immediately to its north and south
-     */
-    public ArrayList<Actor> getActors()
-    {
-        //find the space in front of the four cardinal directions and then get the actors in them
-        ArrayList<Actor> actors = new ArrayList<Actor>();
-        int dir = getDirection();
-        int[] orientations = {Location.NORTH, Location.EAST, Location.WEST, Location.SOUTH};
-        Actor ahead = getGrid().get(getLocation());
-
+        if (other != null)
+        {
+            setColor(other.getColor());
+        }
+        else
+        {
+            setColor(getColor().darker());
+        }
     }
 }
