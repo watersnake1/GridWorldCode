@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9faf79d-6550-4953-8a3e-ad201c279390" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/critters/RockHound.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/critters/RockHoundRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GridWorldCode/ChameleonCritter.class" afterPath="$PROJECT_DIR$/out/production/GridWorldCode/ChameleonCritter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GridWorldCode/ChameleonRunner.class" afterPath="$PROJECT_DIR$/out/production/GridWorldCode/ChameleonRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GridWorldCode/Jumper.class" afterPath="$PROJECT_DIR$/out/production/GridWorldCode/Jumper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GridWorldCode/JumperRunner.class" afterPath="$PROJECT_DIR$/out/production/GridWorldCode/JumperRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/critters/BlusterCritter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GridWorld.iws" />
@@ -45,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonKid.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="54" />
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="e#1136#1137#0" expanded="true" />
                 <element signature="e#1163#1164#0" expanded="true" />
@@ -64,14 +58,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RockHound.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RockHound.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/critters/RockHound.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2639296">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlusterCritter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/critters/BlusterCritter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39589444">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Critter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,6 +138,7 @@
         <option value="$PROJECT_DIR$/projects/dancingBug/DancingBugRunner.java" />
         <option value="$PROJECT_DIR$/projects/critters/RockHound.java" />
         <option value="$PROJECT_DIR$/projects/critters/RockHoundRunner.java" />
+        <option value="$PROJECT_DIR$/projects/critters/BlusterCritter.java" />
       </list>
     </option>
   </component>
@@ -134,9 +153,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
+    <option name="x" value="880" />
     <option name="y" value="23" />
-    <option name="width" value="1916" />
+    <option name="width" value="1037" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -531,12 +550,12 @@
     <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.ZBugRunner" />
       <item index="1" class="java.lang.String" itemvalue="Application.DancingBugRunner" />
-      <item index="2" class="java.lang.String" itemvalue="Application.BoxBugRunner" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BugRunner" />
-      <item index="4" class="java.lang.String" itemvalue="Application.CircleBugRunner" />
-      <item index="5" class="java.lang.String" itemvalue="Application.SpiralBugRunner" />
-      <item index="6" class="java.lang.String" itemvalue="Application.MuskratTester" />
-      <item index="7" class="java.lang.String" itemvalue="Application.RockHoundRunner" />
+      <item index="2" class="java.lang.String" itemvalue="Application.RockHoundRunner" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BoxBugRunner" />
+      <item index="4" class="java.lang.String" itemvalue="Application.BugRunner" />
+      <item index="5" class="java.lang.String" itemvalue="Application.CircleBugRunner" />
+      <item index="6" class="java.lang.String" itemvalue="Application.SpiralBugRunner" />
+      <item index="7" class="java.lang.String" itemvalue="Application.MuskratTester" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -601,11 +620,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456420813257</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished RockHound">
+      <created>1457099715997</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1457099715997</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1916" height="1053" extended-state="6" />
+    <frame x="880" y="23" width="1037" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -623,7 +648,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.164405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="1267" y="25" width="462" height="587" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="1267" y="25" width="462" height="587" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2784553" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -648,7 +673,8 @@
     <MESSAGE value="just circle bug done so far" />
     <MESSAGE value="starting to work on zbug" />
     <MESSAGE value="zbug is finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="zbug is finished" />
+    <MESSAGE value="Finished RockHound" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished RockHound" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -827,17 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonKid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="54" />
-          <folding>
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/jumperBug/Jumper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -866,10 +881,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/critters/RockHound.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2639296">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonKid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/BlusterCritter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39589444">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
           </folding>
         </state>
       </provider>
