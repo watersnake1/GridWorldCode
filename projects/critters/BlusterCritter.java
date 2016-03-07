@@ -54,34 +54,7 @@ public class BlusterCritter extends Critter
         }
         return actors;
     }
-    */
-
-    public ArrayList<Actor> getActors()
-    {
-        ArrayList<Actor> actors = new ArrayList<Actor>();
-
-
-    }
-
-    /**
-     * just do this over and over it will work
-     * @return
-     */
-    public ArrayList<Location> getValidLocations()
-    {
-        ArrayList<Location> locs = new ArrayList<Location>();
-        Location l = getLocation();
-        if (getGrid().isValid(new Location(l.getRow()-2, l.getCol()+2)))
-        {
-            locs.add(new Location(l.getRow()-2, l.getCol()+2));
-        }
-        if (getGrid().isValid(new Location(l.getRow()-2, l.getCol()+2)))
-        {
-            locs.add(new Location(l.getRow()-2, l.getCol()+2));
-        }
-
-    }
-
+    
     /**
      * get all the actors to be processed, counting all the instances of critter present in the array
      * @param actors the actors to be processed
